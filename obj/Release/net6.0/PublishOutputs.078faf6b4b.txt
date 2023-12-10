@@ -1,0 +1,8 @@
+C:\Users\jithi\Desktop\shutdowner\shutDowner.exe
+C:\Users\jithi\Desktop\shutdowner\shutDowner.dll
+C:\Users\jithi\Desktop\shutdowner\shutDowner.deps.json
+C:\Users\jithi\Desktop\shutdowner\shutDowner.runtimeconfig.json
+C:\Users\jithi\Desktop\shutdowner\shutDowner.pdb
+C:\Users\jithi\Desktop\shutdowner\System.CodeDom.dll
+C:\Users\jithi\Desktop\shutdowner\System.Management.dll
+C:\Users\jithi\Desktop\shutdowner\runtimes\win\lib\net6.0\System.Management.dll

@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "LDPSmKX6g6rwBg/LSHnR7TOTROrDJhhT3DRrp0dIfIRSpeMbQ5y8Mr7Sx5ECM4ccXoedsjd4EoVTdQ7Y1Ao4Mw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\jithi\\source\\repos\\shutDowner\\shutDowner.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\jithi\\.nuget\\packages\\system.codedom\\8.0.0\\system.codedom.8.0.0.nupkg.sha512",
+    "C:\\Users\\jithi\\.nuget\\packages\\system.management\\8.0.0\\system.management.8.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
