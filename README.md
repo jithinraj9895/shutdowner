@@ -1,5 +1,5 @@
 # shutdowner
-To shut down windows if the battery percentage is not good. created this for my personal use
-# story
-So my laptop is one potato piece so whenever I do something heavy I needed it to check the battery percentage
-closely and give me a warning if it is droping too fast. just shut down if the percentage is less than 30 or 40.
+Automatically shuts down your Windows system when the battery percentage falls below a specified threshold. Ideal for ensuring that your device doesn't unexpectedly power off, preventing potential data loss or disruptions.
+# Future Additions
+> removing unwanted application using the memory while gaming or heavy work load.
+
