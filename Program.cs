@@ -6,8 +6,16 @@ class Program
     static void Main()
     {
 
+        // Start a new thread to continuously monitor processes
+        System.Threading.Thread monitoringThread = new System.Threading.Thread(MonitorProcesses);
+        monitoringThread.Start();
+
+        // Keep the main thread alive
+        Console.WriteLine("Press Enter to exit.");
+        Console.ReadLine();
+
         int batteryPercentage = GetBatteryPercentage();
-        if (batteryPercentage != -1 || batteryPercentage > 20)
+        if (batteryPercentage != -1 || batteryPercentage > 20 || false)
         {
             Console.WriteLine($"Current battery percentage: {batteryPercentage}%");
             
@@ -80,5 +88,27 @@ class Program
         Console.WriteLine($"System is shutting down in {hour} hour - JUST CHILL");
         int second = hour * 3600; 
         return second;
+    }
+
+    static void MonitorProcesses()
+    {
+        while (true)
+        {
+            // Get the list of all processes currently running on the system
+            Process[] processes = Process.GetProcesses();
+
+            Console.WriteLine("Processes:");
+
+            // Display information about each process
+            foreach (Process process in processes)
+            {
+                if(process.MainWindowHandle != IntPtr.Zero)
+                    Console.WriteLine($"Name: {process.ProcessName}, ID: {process.Id}, Memory Usage: {process.WorkingSet64} bytes");
+            }
+
+            // Sleep for a short interval (e.g., 1 second) before checking processes again
+            System.Threading.Thread.Sleep(1000);
+            break;
+        }
     }
 }
